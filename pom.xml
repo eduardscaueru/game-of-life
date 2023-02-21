@@ -19,6 +19,7 @@
         <thucydides.version>1.8.4</thucydides.version>
         <jelastic.context>gameoflife</jelastic.context>
         <jelastic.environment>wakaleo</jelastic.environment>
+        <sun.tools>/usr/lib/jvm/jdk-11.0.2/lib/tools.jar</sun.tools>
     </properties>
 
     <scm>
@@ -191,7 +192,7 @@
             <artifactId>tools</artifactId>
             <version>1.6.0</version>
             <scope>system</scope>
-            <systemPath>/usr/lib/jvm/jdk-11.0.2/lib/tools.jar</systemPath>
+            <systemPath>${sun.tools}</systemPath>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
